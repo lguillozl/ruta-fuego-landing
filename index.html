@@ -9,25 +9,345 @@
 
     <link rel="stylesheet" href="css/icon-font.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="./img/logo-soy-parrillero.webp">
 
     <title>Soy Parrilero</title>
 </head>
 
 <body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>SMP</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Conocenos</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Modulos</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Reserva</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <header class="header">
-        <div class="logo-box">
-            <img src="./img/logo-soy-parrillero.webp" alt="Logo de la empresa" class="logo">
+        <div class="header__logo-box">
+            <img src="./img/logo-soy-parrillero.webp" alt="Logo de la empresa" class="header__logo">
         </div>
-        <div class="text-box">
+        <div class="header__text-box">
             <h1 class="heading-primary">
-                <span class="heading-primary-main">Ruta del fuego</span>
-                <span class="heading-primary-sub">Un tour de cursos por todo México</span>
+                <span class="heading-primary--main">Ruta del fuego</span>
+                <span class="heading-primary--sub">Alejandro Gutiérrez</span>
             </h1>
 
-            <a href="#" class="btn btn-white btn-animated">Descubre nuestros cursos</a>
+            <a href="#popup" class="btn btn--white btn--animated">Descubre nuestros cursos</a>
         </div>
     </header>
+    <main>
+        <section class="section-about">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Conoce más sobre la ruta del fuego
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <h3 class="heading-tertiary" u-margin-bottom-small>Tour de cursos por México y Estados Unidos</h3>
+                    <p class="paragraph">
+                        Para la ruta del fuego hemos preparado el curso más completo de Parrilla y todo lo relacionado
+                        al fuego y será impartido por Alejandro Gutiérrez Presidente y Fundador de la Sociedad Mexicana
+                        de Parrilleros.
+                    </p>
+                    <h3 class="heading-tertiary" u-margin-bottom-small>Te invitamos a conocer más de este recorrido</h3>
+                    <p class="paragraph">
+                        Separa tu lugar pues tendrémos solo 25 lugares disponibles por ciudad.
+                        El curso tiene una duración de 2 días divididos en dos módulos.
+                    </p>
+
+                    <a href="#popup" class="btn-text">Conoce mas &rarr;</a>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="composition">
+                        <img src="./img/photo-1.jpg" alt="" class="composition__photo composition__photo--p1">
+                        <img src="./img/photo-2.jpg" alt="" class="composition__photo composition__photo--p2">
+                        <img src="./img/photo-3.jpg" alt="" class="composition__photo composition__photo--p3">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-features">
+
+            <div class="row">
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-world"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Admisión</h3>
+                        <p class="feature-box__text">
+                            Este curso está diseñado para todo publico, eres bienvenido a compartir con nosotros esta
+                            experiencia.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-compass"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Duración</h3>
+                        <p class="feature-box__text">
+                            Cada curso tendrá una duración de 2 días, cada día con 9 horas de duración. Horario: 10:00am
+                            a 7:00pm.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-map"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Valor</h3>
+                        <p class="feature-box__text">
+                            Te daremos un certificado de asistencia avalado por la Sociedad Mexicana de Parrilleros
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-heart"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Te cuidamos</h3>
+                        <p class="feature-box__text">
+                            El cupo máximo del diplomado dependerá de cada ciudad. El rango está entre 20 a 35 personas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-tours" id="section-tours">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Conoce nuestros modulos
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--1">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--1">Modulo 1 Res</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>Aguja norteña</li>
+                                    <li>Costilla norteña</li>
+                                    <li>Rib eye</li>
+                                    <li>Porterhouse</li>
+                                    <li>T-bone</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-1">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">Modulo 1</p>
+                                    <p class="card__price-value">Res</p>
+                                </div>
+                                <a href="#popup" class="btn btn--white">Reserva</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--1">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--1">Modulo 2 Cerdo</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>Costillares</li>
+                                    <li>Costillas baby back rib</li>
+                                    <li>Costillas St. Louis</li>
+                                    <li>Pork belly</li>
+                                    <li>Boston butt</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="card__side card__side--back card__side--back-1">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">Modulo 2</p>
+                                    <p class="card__price-value">Cerdo</p>
+                                </div>
+                                <a href="#popup" class="btn btn--white">Reserva</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--1">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--1">Paquete</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>Todos los insumos y utensilios</li>
+                                    <li>Toalla SMP</li>
+                                    <li>Poster SMP</li>
+                                    <li>Pin conmemorativo</li>
+                                    <li>Mandil personalizado SMP</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="card__side card__side--back card__side--back-1">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">¿Que incluye?</p>
+                                    <p class="card__price-value">Paquete</p>
+                                </div>
+                                <a href="#popup" class="btn btn--white">Reserva</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="u-center-text u-margin-top-huge">
+                <a href="#" class="btn btn--brown">Descubre nuestros modulos</a>
+            </div>
+        </section>
+
+        <section class="section-book">
+            <div class="row">
+                <div class="book">
+                    <div class="book__form">
+                        <form action="#" class="form">
+                            <div class="u-margin-bottom-medium">
+                                <h2 class="heading-secondary">
+                                    Reserva ahora!
+                                </h2>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Nombre completo" id="name"
+                                    autocomplete="off" required>
+                                <label for="name" class="form__label">Nombre completo</label>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Correo electronico" id="email"
+                                    autocomplete="off" required>
+                                <label for="email" class="form__label">Correo electronico</label>
+                            </div>
+
+                            <div class="form__group u-margin-bottom-medium">
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="small" name="size">
+                                    <label for="small" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Estados Unidos
+                                    </label>
+                                </div>
+
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="large" name="size">
+                                    <label for="large" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        México
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form__group">
+                                <button class="btn btn--green">Enviar &rarr;</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo-box">
+
+            <picture class="footer__logo">
+                <source media="(max-width: 37.5em)">
+                <img srcset="img/logo-soy-parrillero.webp 1x, img/logo-soy-parrillero.webp 2x" alt="Full logo"
+                    src="./img/logo-soy-parrillero.webp">
+            </picture>
+
+
+
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Tienda</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Ropa y accesorios</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Cursos</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Kits</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Capitulos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    Desarrollada por <a href="#" class="footer__link">Guillermo Olvera López</a>
+                    <a href="#" class="footer__link">Sociedad Mexicana de Parrilleros SMP S.A. de C.V.</a>.
+                    Isaac Garza Pte. 1524, Col. Centro, Monterrey
+                    Nuevo León 64000, México
+                    800 550 4000
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="./img/photo-1.jpg" alt="Tour photo" class="popup__img">
+                <img src="./img/photo-2.jpg" alt="Tour photo" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-small">Reserva con nostros</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">
+                    ¿Qué tiene de diferente este curso a los demás?
+                </h3>
+                <p class="popup__text">
+                    Este es un curso más especializado impartido en dos días consecutivos, donde veremos técnicas de
+                    cocción, asadores, combustibles, control de temperaturas, accesorios, reacciones químicas que
+                    suceden en la cocción, entre muchos otros conceptos. Además nos enfocaremos particularmente en los
+                    cortes de res y cerdo, donde veremos piezas básicas enteras de la res, media canal de cerdo,
+                    identificamos los cortes, anatomía y los diferentes nombres.
+                </p>
+                <a href="#" class="btn btn--brown">Reserva tu lugar</a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
